@@ -21,9 +21,8 @@ function App() {
 				// Setting a data from api
 				setdata({
 					name: data.Name,
-					age: data.Age,
+					version: data.Version,
 					date: data.Date,
-					programming: data.programming,
 				});
 			})
 		);
@@ -32,13 +31,9 @@ function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<h1>React and flask</h1>
-				{/* Calling a data from setdata for showing */}
-				<p>{data.name}</p>
-				<p>{data.age}</p>
-				<p>{data.date}</p>
-				<p>{data.programming}</p>
-
+				<h1>{data.name}</h1>
+				<p>Version: {data.version}</p>
+				<p>Started: {data.date}</p>
 			</header>
 		</div>
 	);
